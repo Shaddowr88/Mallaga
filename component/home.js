@@ -54,7 +54,7 @@ function HomeComponent({ navigation }){
             <View style={{flex:6,  alignItems: "stretch"}}>
                 <Text style={{fontSize:25}}> Méssages </Text>
                 <ScrollView>
-                    <View style={[styles.box2, { backgroundColor: "steelblue" }]} />
+                    <Pressable style={[styles.box2, { backgroundColor: "steelblue" }]}  onPress={() => navigation.navigate('Message')}/>
                     <View style={[styles.box2, { backgroundColor: "steelblue" }]} />
                     <View style={[styles.box2, { backgroundColor: "steelblue" }]} />
                     <View style={[styles.box2, { backgroundColor: "steelblue" }]} />

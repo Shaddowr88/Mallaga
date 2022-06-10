@@ -6,6 +6,7 @@ import {createNativeStackNavigator} from "@react-navigation/native-stack";
 import {createBottomTabNavigator} from "@react-navigation/bottom-tabs";
 
 import HomeScreenComponent from "./screen/HomeScreen";
+import MessageScreen from "./screen/MessageScreen";
 
 const Stack = createNativeStackNavigator();
 
@@ -20,6 +21,7 @@ function MainComponent(){
                 <Stack.Screen  name="Log" component={Log} />
                 <Stack.Screen   name="Home" component={HomeScreenComponent} />
                 <Stack.Screen name="Details" component={Intro} />
+                <Stack.Screen options={{headerShown: true}}  name="Message" component={MessageScreen} />
             </Stack.Navigator>
         </NavigationContainer>
 
